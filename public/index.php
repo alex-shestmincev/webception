@@ -19,6 +19,8 @@
 session_cache_limiter(false);
 session_start();
 
+
+
 define('HASH', 'site_session');
 define('RP', '../');
 require(RP . 'vendor/autoload.php');

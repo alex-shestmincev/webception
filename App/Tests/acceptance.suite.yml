@@ -10,16 +10,16 @@
 
 class_name: WebGuy
 modules:
-    enabled:
-        - PhpBrowser
-        - WebHelper
-        - REST
-    config:
-        REST:
-            url: 'http://webception/'
-            timeout: 90
-        PhpBrowser:
-            url: 'http://webception/'
-            curl:
-                CURLOPT_RETURNTRANSFER: true
-                CURLOPT_FOLLOWLOCATION: true
+   enabled: 
+      - WebDriver
+      - WebHelper
+   config:
+      WebDriver:
+         url: 'http://objavlenie.net/'
+         browser: firefox
+         window_size: 1024x768
+         wait: 0
+         capabilities:
+             unexpectedAlertBehaviour: 'accept'
+
+            
