@@ -17,13 +17,9 @@ modules:
             password: ''
             dump: App/Tests/_data/dump.sql
         WebDriver:
-            url: 'http://sanyokk0.bget.ru'
+            url: 'http://objavlenie.local'
             browser: firefox
             window_size: 1024x768
             wait: 0
             capabilities:
             unexpectedAlertBehaviour: 'accept'
-        PhpBrowser:
-            url: 'http://sanyokk0.bget.ru'
-        REST:
-            url: 'http://sanyokk0.bget.ru/api/'

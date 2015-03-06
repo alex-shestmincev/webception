@@ -21,7 +21,10 @@ return array(
 
     'sites' => array(
 
-        'webception.local'         => dirname(__FILE__) .'/../../codeception.yml',
+        'sanyokk0.bget.ru'         => dirname(__FILE__) .'/../../sanyokk0.bget.ru.yml',
+        'objavlenie.net'         => dirname(__FILE__) .'/../../objavlenie.net.yml',
+        'objavlenie.local'         => dirname(__FILE__) .'/../../objavlenie.local.yml',
+        
 
     ),
 
@@ -48,7 +51,7 @@ return array(
     'tests' => array(
         'acceptance' => TRUE,
         'functional' => TRUE,
-        'unit'       => TRUE,
+        'api'       => TRUE,
     ),
 
     /*
@@ -61,6 +64,7 @@ return array(
         'WebGuy.php',
         'TestGuy.php',
         'CodeGuy.php',
+        'ApiGuy.php',
         '_bootstrap.php',
         '.DS_Store',
     ),

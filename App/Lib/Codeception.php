@@ -124,11 +124,12 @@ class Codeception
             return;
 
         foreach ($this->config['tests'] as $type => $active) {
+            
 
             // If the test type has been disabled in the Webception config,
             //      skip processing the directory read for those tests.
             if (! $active)
-                break;
+                continue;
 
             $files = new \RecursiveIteratorIterator(
                 new \RecursiveDirectoryIterator("{$this->config['paths']['tests']}/{$type}/", \FilesystemIterator::SKIP_DOTS),
@@ -138,7 +139,7 @@ class Codeception
             // Iterate through all the files, and filter out
             //      any files that are in the ignore list.
             foreach ($files as $file) {
-
+                
                 if (! in_array($file->getFilename(), $this->config['ignore'])
                    && $file->isFile())
                 {

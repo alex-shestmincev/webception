@@ -13,13 +13,7 @@ modules:
    enabled: 
       - WebDriver
       - WebHelper
-   config:
-      WebDriver:
-         url: 'http://sanyokk0.bget.ru'
-         browser: firefox
-         window_size: 1024x768
-         wait: 0
-         capabilities:
-             unexpectedAlertBehaviour: 'accept'
+
+      
 
             
