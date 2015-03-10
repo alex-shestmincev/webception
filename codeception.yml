@@ -26,4 +26,4 @@ modules:
         PhpBrowser:
             url: 'http://sanyokk0.bget.ru'
         REST:
-            url: 'http://sanyokk0.bget.ru/api/'
+            url: 'http://sanyokk0.bget.ru'

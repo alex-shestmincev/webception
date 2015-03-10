@@ -49,9 +49,12 @@ return array(
     */
 
     'tests' => array(
-        'acceptance' => TRUE,
-        'functional' => TRUE,
         'api'       => TRUE,
+        'functional' => TRUE,
+        'acceptance' => TRUE,
+        'unit' => TRUE,
+        
+        
     ),
 
     /*
@@ -65,6 +68,7 @@ return array(
         'TestGuy.php',
         'CodeGuy.php',
         'ApiGuy.php',
+        'UnitGuy.php',
         '_bootstrap.php',
         '.DS_Store',
     ),

@@ -23,3 +23,7 @@ modules:
             wait: 0
             capabilities:
             unexpectedAlertBehaviour: 'accept'
+        PhpBrowser:
+            url: 'http://objavlenie.net'
+        REST:
+            url: 'http://objavlenie.net'
